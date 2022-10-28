@@ -1,0 +1,360 @@
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.center>div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.block-container {
+  padding: 20px 0 20px 0;
+}
+
+.block {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*RGB*/
+.rgb > .block:nth-child(2) {
+  background-color: rgb(255, 0, 0);
+}
+
+.rgb > .block:nth-child(3) {
+  background-color: rgb(0, 255, 0);
+}
+
+.rgb > .block:nth-child(4) {
+  background-color: rgb(0, 0, 255);
+}
+
+/*RGBA*/
+.rgba > .block:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rgba > .block:nth-child(3) {
+  background-color: rgba(0, 255, 1);
+}
+
+.rgba > .block:nth-child(4) {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+/*HSL*/
+.hsl > .block:nth-child(2) {
+  background-color: hsl(360, 100%, 50%);
+}
+
+.hsl > .block:nth-child(3) {
+  background-color: hsl(315, 100%, 50%);
+}
+
+.hsl > .block:nth-child(4) {
+  background-color: hsl(225, 100%, 50%);
+}
+
+/*HSLA*/
+.hsla > .block:nth-child(2) {
+  background-color: hsl(360, 100%, 50%, 0.5);
+}
+
+.hsla > .block:nth-child(3) {
+  background-color: hsl(315, 100%, 50%, 1);
+}
+
+.hsla > .block:nth-child(4) {
+  background-color: hsl(225, 100%, 50%, 0.2);
+}
+
+/*HWB*/
+.hwb > .block:nth-child(2) {
+  background-color: hwb(0deg 75% 0%);
+}
+
+.hwb > .block:nth-child(3) {
+  background-color: hwb(0deg 50% 0%);
+}
+
+.hwb > .block:nth-child(4) {
+  background-color: hwb(0deg 50% 50%);
+}
+
+.hwb > .block:nth-child(5) {
+  background-color: hwb(0deg 0% 50%);
+}
+
+.hwb > .block:nth-child(6) {
+  background-color: hwb(0deg 0% 75%);
+}
+
+/*HWBA*/
+.hwba > .block:nth-child(2) {
+  background-color: hwb(0deg 75% 0% / 0.5);
+}
+
+.hwba > .block:nth-child(3) {
+  background-color: hwb(0deg 50% 0% / 1);
+}
+
+.hwba > .block:nth-child(4) {
+  background-color: hwb(0deg 50% 50% / 0.2);
+}
+
+.hwba > .block:nth-child(5) {
+  background-color: hwb(0deg 0% 50% / 0.4);
+}
+
+.hwba > .block:nth-child(6) {
+  background-color: hwb(0deg 0% 75% / 0.7);
+}
+
+/*LAB*/
+.lab > .block:nth-child(2) {
+  background-color: lab(80% 100 50);
+}
+
+.lab > .block:nth-child(3) {
+  background-color: lab(80% 100 50);
+}
+
+/*LABA*/
+.laba > .block:nth-child(2) {
+  background-color: lab(80% 100 50 / 0.5);
+}
+
+.laba > .block:nth-child(3) {
+  background-color: lab(80% 100 50 / 1);
+}
+
+/*LCH*/
+.lch > .block:nth-child(2) {
+  background-color: lch(80% 100 50);
+}
+
+.lch > .block:nth-child(3) {
+  background-color: lch(80% 150 50);
+}
+
+.lch > .block:nth-child(4) {
+  background-color: lch(80% 200 50);
+}
+
+.lch > .block:nth-child(5) {
+  background-color: lch(80% 250 50);
+}
+
+/*LCHA*/
+.lcha > .block:nth-child(2) {
+  background-color: lch(80% 100 50 / 0.5);
+}
+
+.lcha > .block:nth-child(3) {
+  background-color: lch(80% 150 50 / 1);
+}
+
+.lcha > .block:nth-child(4) {
+  background-color: lch(80% 200 50 / 0.2);
+}
+
+.lcha > .block:nth-child(5) {
+  background-color: lch(80% 250 50 / 0.4);
+}
+
+.image {
+  width: 300px;
+  border: 1px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+/* CSS Linear Gradients */
+
+#grad1 {
+  background-image: linear-gradient(red, yellow);
+}
+
+#grad2 {
+  background-image: linear-gradient(to right, red , yellow);
+}
+
+#grad3 {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+/* Using Angles */
+
+#grad4 {
+  background-image: linear-gradient(20deg, red, yellow);
+}
+
+/* Using Multiple Color Stops */
+
+#grad5 {
+  background-image: linear-gradient(red, yellow, green);
+}
+
+#grad6 {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+/* Using Transparency */
+
+#grad7 {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+/* Repeating a linear-gradient */
+
+#grad8 {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+/* Radial Gradients */
+
+#grad9 {
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad10 {
+  background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+
+/* Set Shape */
+
+#grad11 {
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+
+/* Use of Different Size Keywords */
+
+#grad12 {
+  background-image: radial-gradient(closest-side at 10% 10%, red, yellow, black);
+}
+
+#grad13 {
+  background-image: radial-gradient(farthest-side at 10% 10%, red, yellow, black);
+}
+
+#grad14 {
+  background-image: radial-gradient(closest-corner at 10% 10%, red, yellow, black);
+}
+
+#grad15 {
+  background-image: radial-gradient(farthest-corner at 10% 10%, red, yellow, black);
+}
+/* Repeating a radial-gradient */
+
+#grad16 {
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+/* CSS Conic Gradients */
+
+#grad17 {
+  background-image: conic-gradient(red, yellow, green);
+}
+
+/* Conic Gradient: Five Colors */
+
+#grad18 {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+/* Conic Gradient: Three Colors and Degrees */
+
+#grad19 {
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+/* Create Pie Charts */
+
+#grad20 {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+}
+
+#grad21 {
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;
+}
+
+/* Conic Gradient With Specified From Angle */
+
+#grad22 {
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+}
+
+/* Conic Gradient With Specified Center Position */
+
+#grad23 {
+  background-image: conic-gradient(at 60% 45%, red, yellow, green);
+}
+
+/* Repeating a Conic Gradient */
+
+#grad24 {
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+}
+
+#grad25 {
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 50%;
+}
+
+.filter>div>img {
+  width: 100%;
+}
+
+.filter>div{
+  display: inline-block;
+  width: 20%;
+  padding: 2%;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter>div:nth-of-type(2) {
+  filter: drop-shadow(10px 10px 20px) ;
+}
+
+.filter>div:nth-of-type(3) {
+  filter: invert(75%);
+}
+
+.filter>div:nth-of-type(4) {
+  filter: sepia(60%);
+}
+
+.filter2>div:nth-of-type(1) {
+  filter: grayscale(100%);
+}
+
+.filter2>div:nth-of-type(2) {
+  filter: blur(5px);
+}
+
+.filter2>div:nth-of-type(3) {
+  filter: blur(5px) grayscale(100%);
+}
+
+.filter2>div:nth-of-type(4) {
+  filter: none;
+  backdrop-filter: invert(50%);
+}
